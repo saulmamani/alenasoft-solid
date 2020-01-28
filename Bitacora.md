@@ -9,3 +9,11 @@
 - En la clase GildeRose, se ha refactorizado el metodo `isItemSulfuras(item)` para verificar si el el item "Sulfuras, Hand of Ragnaros" y no hardcodear mucho
 - En la clase GildeRose, se ha creado el metodo `updateItemQuality` para eliminar codigo repetido
 
+- Se ha creado la clase abstracta Quality para consentrar los metodos que van a usar todas las clases
+- Se ha creado la interfaz IQuality para encapsular el comportamiento del metodo `void updateQuality();` siguiendo OCP y DIP
+- Se han creado clases para cada tipo de Item, con esto logramos minimizar la fragilidad del codigo y disminuimos la rigidez
+- Se a creado una clase especial para instanciar las diferentes clases segun sus tipos, siguiendo SRP
+- Se ha creado la clase Conjured para implementar la nueva funcionalidad
+- Todas las pruebas han sido exitosas
+- Se han logrado reducir considerablemente los if's anidados
+
